@@ -1,0 +1,57 @@
+/* Cosmic Daily PWA — Design Tokens */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #0a0a1a;
+  --bg-card: #12122a;
+  --bg-card-hover: #1a1a3a;
+  --bg-surface: #0d0d1d;
+
+  /* Text */
+  --text-primary: #e8e8f0;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6a6a80;
+  --text-dim: #444460;
+
+  /* Border */
+  --border: #2a2a4a;
+  --border-subtle: #1a1a3a;
+
+  /* Planetary Colors */
+  --color-sun: #b8860b;
+  --color-moon: #7b8ea8;
+  --color-mars: #c44a2f;
+  --color-mercury: #5a9a6a;
+  --color-jupiter: #8b6abf;
+  --color-venus: #8aa84a;
+  --color-saturn: #888888;
+
+  /* Dynamic — set by JS based on day */
+  --planet-color: var(--color-sun);
+  --planet-bg: #2a2415;
+  --planet-accent: #3d3520;
+
+  /* Typography */
+  --font-spirit: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 20px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-med: 250ms ease;
+}

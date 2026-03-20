@@ -1,0 +1,110 @@
+@import './styles/variables.css';
+@import './styles/header.css';
+@import './styles/practice.css';
+@import './styles/nourish.css';
+@import './styles/training.css';
+
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* App Shell */
+.cosmic-app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.cosmic-main {
+  padding-bottom: 60px;
+}
+
+/* Page Navigation */
+.page-nav {
+  display: flex;
+  gap: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.page-nav__btn {
+  flex: 1;
+  padding: var(--space-md) var(--space-sm);
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.page-nav__btn--active {
+  color: var(--planet-color);
+  border-bottom-color: var(--planet-color);
+}
+
+.page-nav__btn:hover:not(.page-nav__btn--active) {
+  color: var(--text-secondary);
+}
+
+/* Shared utility classes */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: var(--planet-color);
+  text-decoration: none;
+}
+
+/* Touch targets */
+@media (pointer: coarse) {
+  .checklist-row,
+  .page-nav__btn,
+  .intervention__option,
+  .tier-btn,
+  .collapsible__header {
+    min-height: 44px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}

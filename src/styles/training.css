@@ -1,0 +1,323 @@
+/* Training Page Styles */
+
+.training-page {
+  padding: 0 var(--space-md) var(--space-2xl);
+}
+
+/* Workout Header */
+.workout-header {
+  margin: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--planet-accent);
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in srgb, var(--planet-color) 15%, transparent);
+  text-align: center;
+}
+
+.workout-header__name {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--planet-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.workout-header__theme {
+  font-family: var(--font-spirit);
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.workout-header__focus {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: var(--space-sm);
+}
+
+/* Collapsible Section */
+.collapsible {
+  margin: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.collapsible__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-card);
+  cursor: pointer;
+  user-select: none;
+}
+
+.collapsible__title {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--planet-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.collapsible__count {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.collapsible__arrow {
+  font-size: 12px;
+  color: var(--text-dim);
+  transition: transform var(--transition-fast);
+}
+
+.collapsible__arrow--open {
+  transform: rotate(180deg);
+}
+
+.collapsible__body {
+  padding: 0 var(--space-lg) var(--space-md);
+  background: var(--bg-card);
+}
+
+/* Exercise Row */
+.exercise-row {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.exercise-row:last-child {
+  border-bottom: none;
+}
+
+.exercise-row__name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.exercise-row__detail {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.exercise-row__notes {
+  font-family: var(--font-spirit);
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* Cardio */
+.cardio-card {
+  margin: var(--space-sm) var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.cardio-card__name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--planet-color);
+}
+
+.cardio-card__detail {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Tier Selector */
+.tier-selector {
+  display: flex;
+  gap: var(--space-xs);
+  margin: var(--space-md);
+  padding: 3px;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.tier-btn {
+  flex: 1;
+  padding: var(--space-sm) var(--space-xs);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.tier-btn--active {
+  background: var(--planet-color);
+  color: var(--bg-primary);
+}
+
+/* Stretch Section */
+.stretch-section {
+  margin: var(--space-sm) var(--space-md);
+}
+
+.stretch-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.stretch-row:last-child {
+  border-bottom: none;
+}
+
+.stretch-row__name {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.stretch-row__duration {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--planet-color);
+  white-space: nowrap;
+  margin-left: var(--space-sm);
+}
+
+.stretch-row__target {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+/* Skill Progressions */
+.skill-card {
+  margin: var(--space-sm) 0;
+  padding: var(--space-md);
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.skill-card__name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--planet-color);
+}
+
+.skill-card__current {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  margin-bottom: var(--space-sm);
+}
+
+.skill-phase {
+  padding: 3px 0;
+}
+
+.skill-phase__period {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.skill-phase__target {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Travel Mode */
+.travel-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+}
+
+.travel-toggle__label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.travel-toggle__switch {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  background: var(--border);
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.travel-toggle__switch--on {
+  background: var(--planet-color);
+}
+
+.travel-toggle__switch-knob {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: var(--transition-fast);
+}
+
+.travel-toggle__switch--on .travel-toggle__switch-knob {
+  left: 18px;
+}
+
+/* Rest Day */
+.rest-day {
+  margin: var(--space-md);
+  padding: var(--space-xl);
+  text-align: center;
+}
+
+.rest-day__symbol {
+  font-size: 48px;
+  color: var(--planet-color);
+  margin-bottom: var(--space-sm);
+}
+
+.rest-day__message {
+  font-family: var(--font-spirit);
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

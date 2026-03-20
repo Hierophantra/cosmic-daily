@@ -1,0 +1,174 @@
+/* Practice Page Styles */
+
+.practice-page {
+  padding: 0 var(--space-md) var(--space-2xl);
+}
+
+.verse-card {
+  margin: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--planet-accent);
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in srgb, var(--planet-color) 10%, transparent);
+}
+
+.verse-card__label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--planet-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.verse-card__text {
+  font-family: var(--font-spirit);
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.verse-card__week {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: var(--space-sm);
+}
+
+/* Exercise Card */
+.exercise-card {
+  margin: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(135deg, var(--planet-accent), var(--planet-bg));
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in srgb, var(--planet-color) 15%, transparent);
+  cursor: pointer;
+}
+
+.exercise-card__icon-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--planet-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.exercise-card__name {
+  font-family: var(--font-spirit);
+  font-size: 18px;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.exercise-card__subtitle {
+  font-family: var(--font-spirit);
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+}
+
+.exercise-card__description {
+  font-family: var(--font-spirit);
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.exercise-card__practice {
+  font-family: var(--font-spirit);
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6;
+  padding-top: var(--space-sm);
+  border-top: 1px solid color-mix(in srgb, var(--planet-color) 10%, transparent);
+}
+
+.exercise-card__expand-hint {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+/* Section Cards (Morning Seed, Study, Midday, Evening) */
+.practice-section {
+  margin: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.practice-section__label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--planet-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.practice-section__text {
+  font-family: var(--font-spirit);
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.8;
+}
+
+.practice-section__source {
+  font-family: var(--font-spirit);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+  font-style: italic;
+}
+
+/* Checklist */
+.practice-checklist {
+  margin: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.checklist-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: #ccc;
+}
+
+.checklist-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.checklist-box--checked {
+  border-color: var(--planet-color);
+  background: var(--planet-color);
+}
+
+.checklist-box__mark {
+  color: var(--bg-primary);
+  font-size: 10px;
+  font-weight: 900;
+}
